@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân - Phạm Phương Nhung</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <!-- CANVAS BACKGROUND (Hiệu ứng cánh hoa/hạt sáng Tím - Hồng rơi) -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <div class="header-left">
+            <!-- Thay link web nhóm của bạn vào chỗ [LINK_WEB_NHOM_CỦA_BẠN] (Ví dụ: https://ten-web-nhom.com hoặc ../index.html) -->
+            <a href="[LINK_WEB_NHOM_CỦA_BẠN]" class="back-home-btn" title="Về trang chủ nhóm">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Trang chủ</span>
+            </a>
+            <div class="logo">Phạm Phương Nhung</div>
+        </div>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#hero">Giới thiệu</a></li>
+                <li><a href="#info">Cá nhân</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#experience">Học vấn & Kinh nghiệm</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#objective">Mục tiêu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggleBtn" title="Đổi giao diện Sáng/Tối"><i class="fa-solid fa-moon"></i></button>
+            <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <main class="container">
+        
+        <!-- 1. GIỚI THIỆU BẢN THÂN (HERO) -->
+        <section id="hero" class="hero fade-in-section">
+            <div class="hero-card">
+                <div class="hero-info">
+                    <span class="badge"><i class="fa-solid fa-graduation-cap"></i> ĐẠI HỌC BÌNH DƯƠNG</span>
+                    <h1>Xin chào, tôi là <br><span class="gradient-text">Phạm Phương Nhung</span></h1>
+                    <p class="title">Sinh viên Công nghệ Thông tin</p>
+                    <p class="desc">
+                        Tôi là sinh viên ngành Công nghệ thông tin, niên khóa K28 tại Trường Đại học Bình Dương. Tôi có định hướng phát triển trong lĩnh vực công nghệ, truyền thông số. Bên cạnh việc học, tôi tham gia hỗ trợ công tác tuyển sinh cho trường, qua đó rèn luyện khả năng giao tiếp, tư vấn, hỗ trợ thông tin và làm việc với nhiều đối tượng khác nhau.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="mailto:phamphuongnhung1808@gmail.com" class="btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Gửi Email
+                        </a>
+                        <a href="tel:0912882191" class="btn-outline">
+                            <i class="fa-solid fa-phone"></i> 0912.882.191
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-glow-ring">
+                        <img src="anh1.JPG" alt="Ảnh đại diện Phạm Phương Nhung" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BỐ CỤC 2 CỘT MAIN -->
+        <div class="main-grid">
+            
+            <!-- CỘT TRÁI (SIDEBAR: CÁ NHÂN & KỸ NĂNG) -->
+            <aside class="sidebar">
+                
+                <!-- THÔNG TIN CÁ NHÂN -->
+                <section id="info" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-user-sparkles"></i> Thông tin cá nhân</h2>
+                    <ul class="info-list">
+                        <li>
+                            <div class="info-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                            <div>
+                                <small>Ngày sinh</small>
+                                <strong>18/08/2007</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <small>Quê quán</small>
+                                <strong>Nam Định, Việt Nam</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fa-solid fa-university"></i></div>
+                            <div>
+                                <small>Trường đào tạo</small>
+                                <strong>Trường Đại học Bình Dương</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <small>Điện thoại</small>
+                                <strong>0912.882.191</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <small>Email</small>
+                                <strong style="word-break: break-all;">phamphuongnhung1808@gmail.com</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- KỸ NĂNG -->
+                <section id="skills" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-laptop-code"></i> Kỹ năng chuyên môn</h2>
+                    
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Tin học cơ sở</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Giao tiếp & Tư vấn</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Microsoft Office</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Làm việc nhóm</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+
+                    <h3 class="sub-title"><i class="fa-solid fa-language"></i> Ngoại ngữ</h3>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Tiếng Việt</span>
+                            <span class="skill-percent">100%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress highlight-gold" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Tiếng Anh</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                </section>
+
+            </aside>
+
+            <!-- CỘT PHẢI (HỌC VẤN, KINH NGHIỆM & MỤC TIÊU) -->
+            <div class="content-body">
+                
+                <!-- HỌC VẤN & KINH NGHIỆM -->
+                <section id="experience" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-briefcase"></i> Học vấn & Kinh nghiệm</h2>
+                    <div class="timeline">
+                        
+                        <!-- Học vấn -->
+                        <div class="timeline-item">
+                            <span class="time-badge">Niên khóa 2025 - 2029</span>
+                            <h3>Ngành Công nghệ thông tin</h3>
+                            <p class="company-name"><i class="fa-solid fa-building-columns"></i> Trường Đại học Bình Dương</p>
+                            <p class="desc-text">Đang theo học ngành Công nghệ thông tin, tập trung phát triển kiến thức về tin học, công nghệ và các kỹ năng ứng dụng công nghệ trong thực tế.</p>
+                        </div>
+
+                        <!-- Kinh nghiệm 1 -->
+                        <div class="timeline-item">
+                            <span class="time-badge">Hiện tại</span>
+                            <h3>Hỗ trợ tuyển sinh</h3>
+                            <p class="company-name"><i class="fa-solid fa-building-columns"></i> Trường Đại học Bình Dương</p>
+                            <ul class="bullet-list">
+                                <li>Hỗ trợ cung cấp thông tin tuyển sinh cho học sinh và phụ huynh.</li>
+                                <li>Hướng dẫn tìm hiểu ngành học, chương trình đào tạo và thông tin liên quan đến trường.</li>
+                                <li>Hỗ trợ giải đáp các câu hỏi cơ bản trong quá trình tìm hiểu và đăng ký tuyển sinh.</li>
+                                <li>Rèn luyện kỹ năng giao tiếp, tư vấn, xử lý thông tin và làm việc với nhiều đối tượng.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Kinh nghiệm 2 -->
+                        <div class="timeline-item">
+                            <span class="time-badge">Hiện tại</span>
+                            <h3>Trợ giảng môn Năng Lực Số</h3>
+                            <p class="company-name"><i class="fa-solid fa-building-columns"></i> Trường Đại học Bình Dương</p>
+                            <ul class="bullet-list">
+                                <li>Làm cầu nối thông tin giữa giảng viên chính, học viên và phụ huynh.</li>
+                                <li>Đứng lớp phụ trách ôn tập, giải đáp thắc mắc hoặc hướng dẫn thực hành cho học viên/sinh viên.</li>
+                                <li>Rèn luyện kỹ năng giao tiếp, tư vấn, xử lý thông tin và làm việc với nhiều đối tượng.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- DỰ ÁN CÁ NHÂN & ẤN PHẨM SÁNG TẠO -->
+                <section id="projects" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-palette"></i> Dự án cá nhân & Thiết kế Truyền thông</h2>
+                    <div class="projects-grid">
+        
+                        <!-- Dự án 1 -->
+                        <div class="project-card">
+                            <div class="project-img-box">
+                                <img src="duan1.jpg" alt="Poster Truyền thông Tuyển sinh BDU" class="project-img">
+                                <span class="project-tag">Graphic Design</span>
+                            </div>
+                            <div class="project-info">
+                                <h3>Thiết kế Poster Tuyển sinh & Banner Ngành</h3>
+                                <p>Thực hiện các ấn phẩm poster truyền thông cho ngành Hệ thống thông tin, Trí tuệ nhân tạo (AI) và Robot tại Đại học Bình Dương.</p>
+                            </div>
+                        </div>
+
+                        <!-- Dự án 2 -->
+                        <div class="project-card">
+                            <div class="project-img-box">
+                                <img src="duan2.jpg" alt="Bộ Sticker & Hashtag Cầm tay" class="project-img">
+                                <span class="project-tag">Branding / Event</span>
+                            </div>
+                            <div class="project-info">
+                                <h3>Bộ Hashtag & Sticker Linh vật Truyền thông</h3>
+                                <p>Sáng tạo bộ Hashtag cầm tay (#TeamLẬPTRÌNH, #TeamTHIẾTKẾ, #TeamMÊROBOT, #AIDTI) và Sticker linh vật công nghệ phục vụ các sự kiện tuyển sinh.</p>
+                            </div>
+                        </div>
+
+                        <!-- Dự án 3 -->
+                        <div class="project-card">
+                            <div class="project-img-box">
+                                <img src="duan3.jpg" alt="Mindmap & Concept Đồ họa" class="project-img">
+                                <span class="project-tag">Visual & Mindmap</span>
+                            </div>
+                            <div class="project-info">
+                                <h3>Sơ đồ Tư duy & Concept Thời trang/Đồ họa</h3>
+                                <p>Thiết kế sơ đồ tư duy hệ thống kiến thức, minh họa linh vật và xây dựng concept thời trang/merchandise sáng tạo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- MỤC TIÊU NGHỀ NGHIỆP -->
+                <section id="objective" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-bullseye"></i> Mục tiêu nghề nghiệp</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Phát triển chuyên môn CNTT</h3>
+                            <p class="desc-text">Nâng cao kỹ năng tin học, công nghệ và ứng dụng kiến thức vào môi trường thực tế.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Phát triển SEO & truyền thông số</h3>
+                            <p class="desc-text">Từng bước nâng cao kiến thức SEO, nội dung số và các công cụ hỗ trợ truyền thông.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Kỹ năng giao tiếp</h3>
+                            <p class="desc-text">Tiếp tục phát triển khả năng tư vấn, hỗ trợ và trao đổi thông tin chuyên nghiệp.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Làm việc nhóm</h3>
+                            <p class="desc-text">Rèn luyện tinh thần phối hợp, trách nhiệm và khả năng thích nghi trong môi trường tập thể.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FORM LIÊN HỆ -->
+                <section id="contact" class="glass-card fade-in-section">
+                    <h2><i class="fa-solid fa-envelope"></i> Liên hệ với mình</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" placeholder="Nhập họ tên của bạn...">
+                            <span class="error-msg" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Nhập email của bạn...">
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Lời nhắn</label>
+                            <textarea id="message" rows="4" placeholder="Nhập nội dung lời nhắn..."></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">Gửi tin nhắn <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="toast">Gửi tin nhắn thành công!</div>
+
+    <footer>
+        <p>&copy; 2026 Phạm Phương Nhung. </p>
+    </footer>
+
+    <!-- File JS -->
+    <script src="script.js"></script>
+</body>
+</html>
